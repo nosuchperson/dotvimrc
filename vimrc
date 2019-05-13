@@ -136,9 +136,9 @@ let g:godef_split=2
 "==============================================================================
 
 " make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<space>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:ycm_key_list_select_completion = ['<C-n>', '<tab>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
+let g:ycm_min_num_of_chars_for_completion=1
 
 "============= CtrlP =================
 set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store  " MacOSX/Linux
