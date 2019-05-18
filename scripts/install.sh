@@ -57,7 +57,10 @@ main() {
 
 
     printf "Installing plugins ... \n"
-    env ln -s ~/.vim/vimrc ~/.vimrc
+    if [ -f ~/.vimrc ] ; then
+        env rm -f ~/.vimrc
+    fi
+    env ln -b -s ~/.vim/vimrc ~/.vimrc
 
     env vim +BundleInstall || {
         printf "Error: vim +BundleInstall failed !\n"
