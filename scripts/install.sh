@@ -67,7 +67,7 @@ main() {
         exit 1
     }
 
-    env vim +GoBinariesInstall || {
+    env vim +GoInstallBinaries || {
         printf "Error: vim +GoBinariesInstall failed !\n"
         exit 1
     }
