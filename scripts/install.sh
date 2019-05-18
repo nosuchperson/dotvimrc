@@ -67,6 +67,11 @@ main() {
         exit 1
     }
 
+    env vim +GoBinariesInstall || {
+        printf "Error: vim +GoBinariesInstall failed !\n"
+        exit 1
+    }
+
     printf "Installing YouCompleteMe ... \n"
     env python3 ~/.vim/bundle/YouCompleteMe/install.py --clang-completer --go-completer 
 
