@@ -74,8 +74,8 @@ let NERDTreeChDirMode=2
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
 let NERDTreeShowBookmarks=1
 
-" Toggle NERDTreeToogle -> Ctrl+b -> same as vscode
-map <C-b> :NERDTreeToggle<CR>
+" Toggle NERDTreeToggle -> F2 
+map <F2> :NERDTreeToggle<CR>
 " Open NERDTree automatically when vim startup
 autocmd vimenter * NERDTree
 
@@ -109,7 +109,8 @@ if executable('coffeetags')
     \ ]
     \ }
 endif
-
+" Toggle TagbarToggle -> F3
+map <F3> :TagbarToggle<CR>
 
 "==============================================================================
 " vim-go 插件
