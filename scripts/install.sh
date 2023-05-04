@@ -43,8 +43,8 @@ main() {
 
 
     printf "Cloning dotvimrc ...\n"
-    env git clone --depth=1 https://github.com/PandaShare/dotvimrc.git ~/.vim || {
-        printf "Error: git clone of PandaShare/dotvimrc repo failed !\n"
+    env git clone --depth=1 https://github.com/nosuchperson/dotvimrc.git ~/.vim || {
+        printf "Error: git clone of nosuchperson/dotvimrc repo failed !\n"
         exit 1
     }
 
