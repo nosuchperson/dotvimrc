@@ -12,7 +12,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Syntax
 Plugin 'scrooloose/syntastic'
-Plugin 'Valloric/YouCompleteMe'
 
 
 " Golang
@@ -32,9 +31,14 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'powerline/powerline'
 
 
+" EasyMontion -> ACEJUMP VIM
+Plugin 'easymotion/vim-easymotion'
 
 
+Plugin 'ycm-core/YouCompleteMe'
 
+
+Plugin 'puremourning/vimspector'
 
 
 
